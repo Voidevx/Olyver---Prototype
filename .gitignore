@@ -1,0 +1,41 @@
+# Dependências e build
+node_modules/
+dist/
+motion/out/
+motion/.remotion/
+
+# Variáveis de ambiente (nunca versionar)
+.env
+.env.*
+!.env.example
+*.local
+
+# Logs e temporários
+*.log
+npm-debug.log*
+*.tmp
+*.bak
+*.backup
+*.swp
+tmp/
+.temp/
+.cache/
+coverage/
+
+# Chaves e certificados (nunca devem estar no projeto)
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Backup do site antigo (fica só no computador de quem o criou)
+_dev/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini

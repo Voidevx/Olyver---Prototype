@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSP de reforço: a versão completa (com frame-ancestors e HSTS) vai nos headers do servidor; ver SECURITY.md -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Catálogo de produtos | Olyver Import</title>
+  <meta name="description" content="Catálogo Olyver Import: iPhone, iPad, Mac, Apple Watch, AirPods, JBL, Xiaomi e acessórios. Filtre por marca, categoria, armazenamento, memória e condição.">
+  <meta name="theme-color" content="#0a0a0b">
+  <link rel="canonical" href="https://www.olyverimport.com.br/produtos.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Catálogo | Olyver Import">
+  <meta property="og:description" content="Apple, JBL, Xiaomi e acessórios com garantia, procedência e pronta entrega.">
+  <meta property="og:image" content="https://www.olyverimport.com.br/assets/img/loja-fachada.jpg">
+  <meta property="og:url" content="https://www.olyverimport.com.br/produtos.html">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Olyver Import">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-latin.woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/init.js"></script>
+</head>
+<body class="pagina-catalogo">
+  <a class="skip-link" href="#resultados">Pular para os resultados</a>
+
+  <!-- ===================== NAVEGAÇÃO ===================== -->
+  <header class="site-header" id="topo">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Olyver Import — início">
+        <img src="assets/img/logo-olyver.png" alt="Olyver Import" width="820" height="343">
+      </a>
+
+      <nav class="main-nav" id="menu" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html" aria-current="page">Produtos</a></li>
+          <li><a href="index.html#apple">Apple</a></li>
+          <li><a href="index.html#jbl">JBL</a></li>
+          <li><a href="index.html#xiaomi">Xiaomi</a></li>
+          <li><a href="index.html#perifericos">Periféricos</a></li>
+          <li><a href="index.html#sobre">Sobre a Olyver</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+        <button class="btn btn-gold nav-cta-mobile" type="button" data-contato>Falar conosco</button>
+      </nav>
+
+      <div class="header-actions">
+        <a class="icon-btn" href="#busca" data-focar-busca aria-label="Buscar produtos">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </a>
+        <button class="btn btn-gold btn-sm header-cta" type="button" data-contato>Falar conosco</button>
+        <button class="icon-btn menu-toggle" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ===================== TOPO DO CATÁLOGO ===================== -->
+    <section class="cat-hero" aria-labelledby="cat-titulo">
+      <div class="wrap">
+        <nav class="breadcrumb" aria-label="Você está em">
+          <ol><li><a href="index.html">Início</a></li><li aria-current="page">Produtos</li></ol>
+        </nav>
+        <h1 id="cat-titulo">Catálogo</h1>
+        <p class="lead">Encontre o produto ideal: busque por nome, chip, tela ou recurso e refine por marca, armazenamento, memória e condição.</p>
+
+        <form class="busca-grande" id="busca" role="search">
+          <div class="busca-campo">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <label class="sr-only" for="f-busca">Buscar produtos</label>
+            <input type="search" id="f-busca" name="q" placeholder="Ex.: iPhone 256 GB, A19, JBL" autocomplete="off" maxlength="80"
+                   role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="sugestoes">
+            <kbd class="atalho" aria-hidden="true">/</kbd>
+          </div>
+          <ul class="sugestoes" id="sugestoes" role="listbox" aria-label="Sugestões" hidden></ul>
+        </form>
+
+        <div class="atalhos-cat" id="atalhos-cat" aria-label="Categorias populares"></div>
+      </div>
+    </section>
+
+    <!-- ===================== CATÁLOGO ===================== -->
+    <section class="cat-corpo" aria-label="Produtos">
+      <div class="wrap cat-layout">
+
+        <!-- Filtros: barra lateral no computador; no celular vão para a gaveta -->
+        <div class="cat-lateral" id="lateral">
+          <aside class="painel-filtros" id="painel-filtros" aria-labelledby="filtros-titulo">
+            <div class="painel-topo">
+              <h2 id="filtros-titulo">Filtros</h2>
+              <button class="link-btn" type="button" data-limpar-tudo hidden>Limpar tudo</button>
+            </div>
+            <div id="facetas"></div>
+          </aside>
+        </div>
+
+        <div class="cat-resultados" id="resultados" tabindex="-1">
+          <div class="res-barra">
+            <p class="res-contagem" id="f-contagem" aria-live="polite"></p>
+            <div class="res-acoes">
+              <button class="btn btn-outline btn-sm abrir-filtros" type="button" aria-haspopup="dialog">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+                Filtros <span class="contador" id="contador-filtros" hidden></span>
+              </button>
+              <label class="ordem">
+                <span class="sr-only">Ordenar por</span>
+                <select id="f-ordem">
+                  <option value="relevancia">Mais relevantes</option>
+                  <option value="lancamentos">Lançamentos primeiro</option>
+                  <option value="nome">Nome (A–Z)</option>
+                  <option value="menor-preco">Menor preço</option>
+                  <option value="maior-preco">Maior preço</option>
+                </select>
+              </label>
+              <div class="vista" role="group" aria-label="Modo de exibição">
+                <button class="icon-btn icon-btn-light" type="button" data-vista="grade" aria-pressed="true" aria-label="Exibir em grade">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>
+                </button>
+                <button class="icon-btn icon-btn-light" type="button" data-vista="lista" aria-pressed="false" aria-label="Exibir em lista">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="5" height="5" rx="1.2"/><rect x="4" y="14" width="5" height="5" rx="1.2"/><path d="M12 7.5h8M12 16.5h8"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <ul class="filtros-ativos" id="filtros-ativos" aria-label="Filtros aplicados" hidden></ul>
+
+          <div class="product-grid" id="grid"></div>
+          <div class="more">
+            <button class="btn btn-outline" type="button" id="f-mais" hidden>Mostrar mais</button>
+          </div>
+
+          <noscript>
+            <p class="noscript">Ative o JavaScript para ver o catálogo.
+          </p>
+          </noscript>
+
+          <div class="empty" id="vazio" hidden>
+            <p class="empty-title">Nenhum produto encontrado.</p>
+            <p id="vazio-texto">Tente outros termos ou remova alguns filtros. Também consultamos a disponibilidade para você.</p>
+            <div class="vazio-acoes">
+              <button class="btn btn-outline" type="button" data-limpar-tudo>Limpar filtros</button>
+              <button class="btn btn-gold" type="button" data-contato>Consultar disponibilidade</button>
+            </div>
+            <div class="vazio-sugestoes" id="vazio-sugestoes"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <img src="assets/img/logo-olyver.png" alt="Olyver Import" width="820" height="343" loading="lazy">
+        <p>A escolha certa.</p>
+      </div>
+      <nav aria-label="Rodapé">
+        <ul class="footer-links">
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="index.html#apple">Apple</a></li>
+          <li><a href="index.html#jbl">JBL</a></li>
+          <li><a href="index.html#xiaomi">Xiaomi</a></li>
+          <li><a href="index.html#perifericos">Periféricos</a></li>
+          <li><a href="index.html#sobre">Sobre</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrap footer-legal">
+      <p>© <span id="ano"></span> Olyver Import. Todos os direitos reservados.</p>
+      <p>Apple, iPhone, iPad, Mac, Apple Watch e AirPods são marcas da Apple Inc. JBL e Xiaomi são marcas de seus respectivos proprietários. A Olyver Import é uma revenda independente.</p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante (mobile) -->
+  <button class="fab" type="button" data-contato aria-label="Falar conosco pelo WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path d="M8.8 8.6c.2-.5.5-.5.8-.5h.5c.2 0 .4 0 .5.4l.7 1.6c.1.2 0 .4-.1.6l-.5.6c-.1.1-.2.3 0 .5.4.7 1 1.4 1.6 1.9.6.5 1.2.8 1.6 1 .2.1.4 0 .5-.1l.6-.8c.2-.2.4-.2.6-.1l1.6.8c.2.1.4.2.4.4 0 .3 0 1-.5 1.5-.4.4-1.2.8-1.9.7-.8-.1-2.4-.6-3.9-1.9-1.6-1.4-2.5-3.1-2.7-3.9-.2-.8.1-1.5.3-1.8Z"/></svg>
+  </button>
+
+  <!-- Gaveta de filtros (celular) -->
+  <dialog class="modal gaveta" id="gaveta-filtros" aria-labelledby="gaveta-titulo">
+    <div class="gaveta-inner">
+      <div class="gaveta-topo">
+        <h2 id="gaveta-titulo">Filtros</h2>
+        <button class="icon-btn icon-btn-light" type="button" data-fechar aria-label="Fechar filtros">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <div class="gaveta-corpo" id="gaveta-corpo"></div>
+      <div class="gaveta-rodape">
+        <button class="btn btn-outline" type="button" data-limpar-tudo>Limpar</button>
+        <button class="btn btn-dark" type="button" data-fechar id="ver-resultados">Ver resultados</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Modal: detalhes do produto -->
+  <dialog class="modal product-modal" id="modal-produto" aria-labelledby="pm-nome">
+    <div class="modal-inner" id="pm-conteudo"></div>
+  </dialog>
+
+  <!-- Modal: escolha da unidade -->
+  <dialog class="modal sheet" id="modal-contato" aria-labelledby="mc-titulo">
+    <div class="sheet-inner">
+      <button class="icon-btn icon-btn-light modal-close" type="button" data-fechar aria-label="Fechar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <h2 id="mc-titulo">Escolha a unidade</h2>
+      <p class="sheet-sub" id="mc-sub">Você será direcionado ao WhatsApp.</p>
+      <div class="sheet-options" id="mc-opcoes"></div>
+    </div>
+  </dialog>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/produtos.js" defer></script>
+  <script src="js/icones.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/catalogo.js" defer></script>
+</body>
+</html>

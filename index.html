@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSP de reforço: a versão completa (com frame-ancestors e HSTS) vai nos headers do servidor; ver SECURITY.md -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Olyver Import | iPhone, Apple, JBL e Xiaomi</title>
+  <meta name="description" content="Olyver Import: produtos Apple, JBL, Xiaomi e acessórios com garantia, procedência e pronta entrega. Lojas em Paragominas e Tailândia e laboratório próprio.">
+  <meta name="theme-color" content="#0a0a0b">
+  <link rel="canonical" href="https://www.olyverimport.com.br/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Olyver Import | A escolha certa em tecnologia">
+  <meta property="og:description" content="Apple, JBL, Xiaomi e acessórios com garantia, procedência e pronta entrega.">
+  <meta property="og:image" content="https://www.olyverimport.com.br/assets/img/loja-fachada.jpg">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://www.olyverimport.com.br/">
+  <meta property="og:site_name" content="Olyver Import">
+  <meta property="og:image:alt" content="Fachada da loja Olyver Import">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-latin.woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/img/hero/olyver-hero-wide.jpg" media="(min-width: 761px)">
+  <link rel="preload" as="image" href="assets/img/hero/olyver-hero-mobile.jpg" media="(max-width: 760px)">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/init.js"></script>
+  <script src="js/hero.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Olyver Import",
+    "url": "https://www.olyverimport.com.br/",
+    "logo": "https://www.olyverimport.com.br/assets/img/logo-olyver.png",
+    "image": "https://www.olyverimport.com.br/assets/img/loja-fachada.jpg",
+    "slogan": "A escolha certa"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ===================== NAVEGAÇÃO ===================== -->
+  <header class="site-header" id="topo">
+    <div class="wrap header-inner">
+      <a class="brand" href="#inicio" aria-label="Olyver Import — início">
+        <img src="assets/img/logo-olyver.png" alt="Olyver Import" width="820" height="343">
+      </a>
+
+      <nav class="main-nav" id="menu" aria-label="Principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="#apple">Apple</a></li>
+          <li><a href="#jbl">JBL</a></li>
+          <li><a href="#xiaomi">Xiaomi</a></li>
+          <li><a href="#perifericos">Periféricos</a></li>
+          <li><a href="#sobre">Sobre a Olyver</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <button class="btn btn-gold nav-cta-mobile" type="button" data-contato>Falar conosco</button>
+      </nav>
+
+      <div class="header-actions">
+        <a class="icon-btn" href="produtos.html#busca" aria-label="Buscar produtos">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </a>
+        <button class="btn btn-gold btn-sm header-cta" type="button" data-contato>Falar conosco</button>
+        <button class="icon-btn menu-toggle" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="wrap hero-stage">
+        <!-- Logo animada (Remotion, pasta motion/). js/hero.js escolhe wide/mobile e toca quando ela entra na tela; sem JS fica o poster -->
+        <video class="hero-video" id="hero-video" muted playsinline disablepictureinpicture disableremoteplayback preload="auto" aria-label="Logo animada da Olyver Import" poster="assets/img/hero/olyver-hero-wide.jpg" width="2400" height="800"></video>
+      </div>
+
+      <div class="wrap hero-copy reveal">
+        <p class="eyebrow">Olyver Import · Paragominas e Tailândia</p>
+        <h1 id="hero-titulo">Tecnologia premium.<br><span class="gold-text">A escolha certa.</span></h1>
+        <p class="lead">Apple, JBL, Xiaomi e acessórios selecionados — com garantia, procedência e pronta entrega.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="produtos.html">Conhecer catálogo</a>
+          <button class="btn btn-ghost" type="button" data-contato>Falar conosco</button>
+        </div>
+      </div>
+
+      <ul class="wrap trust" aria-label="Diferenciais">
+        <li><strong>1 ano</strong><span>de garantia nos seminovos</span></li>
+        <li><strong>+8 anos</strong><span>de mercado</span></li>
+        <li><strong>Lab próprio</strong><span>com técnicos especializados</span></li>
+        <li><strong>Pronta entrega</strong><span>e loja física</span></li>
+      </ul>
+    </section>
+
+    <!-- ===================== CATEGORIAS ===================== -->
+    <section class="section" aria-labelledby="cat-titulo">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 id="cat-titulo">Explore por categoria</h2>
+          <a class="link-arrow" href="produtos.html">Ver todos os produtos</a>
+        </div>
+        <div class="cat-rail" id="cat-rail" role="list"></div>
+      </div>
+    </section>
+
+    <!-- ===================== DESTAQUES ===================== -->
+    <section class="section section-mist" aria-labelledby="dest-titulo">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow eyebrow-dark">Selecionados</p>
+            <h2 id="dest-titulo">Destaques e lançamentos</h2>
+          </div>
+          <div class="rail-controls" data-rail="dest-rail">
+            <button class="icon-btn icon-btn-light" type="button" data-dir="-1" aria-label="Anterior">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <button class="icon-btn icon-btn-light" type="button" data-dir="1" aria-label="Próximo">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-rail" id="dest-rail"></div>
+      </div>
+    </section>
+
+    <!-- ===================== APPLE ===================== -->
+    <section class="section apple" id="apple" aria-labelledby="apple-titulo">
+      <div class="wrap">
+        <div class="apple-head reveal">
+          <p class="eyebrow eyebrow-dark">Nossa especialidade</p>
+          <h2 id="apple-titulo">O universo Apple,<br>com atendimento de especialista.</h2>
+          <p class="lead">Novos e seminovos revisados, com garantia e suporte do nosso laboratório próprio.</p>
+        </div>
+        <div class="apple-grid" id="apple-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== JBL ===================== -->
+    <section class="section brand-band brand-jbl" id="jbl" aria-labelledby="jbl-titulo">
+      <div class="wrap brand-layout">
+        <div class="brand-copy reveal">
+          <p class="eyebrow eyebrow-dark">JBL</p>
+          <h2 id="jbl-titulo">Som que ocupa<br>qualquer espaço.</h2>
+          <p>Caixas de som portáteis e fones com a assinatura sonora JBL — para casa, viagem e para levar a festa junto.</p>
+          <a class="btn btn-dark" href="produtos.html?marca=JBL">Ver produtos JBL</a>
+        </div>
+        <div class="brand-products" data-marca="JBL"></div>
+      </div>
+    </section>
+
+    <!-- ===================== XIAOMI ===================== -->
+    <section class="section brand-band brand-xiaomi" id="xiaomi" aria-labelledby="xiaomi-titulo">
+      <div class="wrap brand-layout brand-layout-rev">
+        <div class="brand-copy reveal">
+          <p class="eyebrow eyebrow-dark">Xiaomi</p>
+          <h2 id="xiaomi-titulo">Tecnologia inteligente<br>para o dia a dia.</h2>
+          <p>Smartphones, fones e wearables com excelente custo-benefício e a qualidade que você espera.</p>
+          <a class="btn btn-dark" href="produtos.html?marca=Xiaomi">Ver produtos Xiaomi</a>
+        </div>
+        <div class="brand-products" data-marca="Xiaomi"></div>
+      </div>
+    </section>
+
+    <!-- ===================== PERIFÉRICOS ===================== -->
+    <section class="section section-mist" id="perifericos" aria-labelledby="per-titulo">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow eyebrow-dark">Complete seu setup</p>
+            <h2 id="per-titulo">Acessórios e periféricos</h2>
+          </div>
+        </div>
+        <div class="tile-grid" id="per-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== CHAMADA PARA O CATÁLOGO ===================== -->
+    <section class="section catalog-cta" id="catalogo" aria-labelledby="catalogo-titulo">
+      <div class="wrap">
+        <div class="cta-catalogo reveal">
+          <div class="cta-texto">
+            <p class="eyebrow eyebrow-dark">Catálogo completo</p>
+            <h2 id="catalogo-titulo">Procurando algo específico?</h2>
+            <p class="section-sub">Busque por modelo, chip, tela ou recurso e filtre por marca, armazenamento, memória e condição.</p>
+          </div>
+          <form class="busca-home" id="busca-home" role="search">
+            <label class="search">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+              <span class="sr-only">Buscar no catálogo</span>
+              <input type="search" id="busca-home-q" name="q" placeholder="Ex.: iPhone 256 GB, AirPods, JBL" autocomplete="off" maxlength="80">
+            </label>
+            <button class="btn btn-dark" type="submit">Buscar</button>
+          </form>
+          <a class="link-arrow" href="produtos.html">Ver todos os produtos</a>
+        </div>
+        <noscript>
+          <p class="noscript">Ative o JavaScript para ver o catálogo.
+          </p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE ===================== -->
+    <section class="section section-dark about" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="wrap">
+        <div class="about-head reveal">
+          <p class="eyebrow">Sobre a Olyver</p>
+          <h2 id="sobre-titulo">Mais de 8 anos entregando<br>confiança, não só produtos.</h2>
+          <p class="lead">Estrutura, garantia e acompanhamento: um atendimento sério, loja física preparada e um pós-venda que continua depois da entrega.</p>
+        </div>
+
+        <ul class="pillars">
+          <li class="reveal"><h3>Credibilidade</h3><p>Referência regional em produtos Apple, com mais de 8 anos de mercado.</p></li>
+          <li class="reveal"><h3>Qualidade</h3><p>Produtos selecionados, com procedência e 1 ano de garantia nos seminovos.</p></li>
+          <li class="reveal"><h3>Atendimento</h3><p>Consultivo, direto e sem pressão — antes e depois da compra.</p></li>
+          <li class="reveal"><h3>Tecnologia</h3><p>Laboratório próprio com técnicos especializados.</p></li>
+          <li class="reveal"><h3>Variedade</h3><p>Apple, JBL, Xiaomi, acessórios e periféricos em um só lugar.</p></li>
+        </ul>
+
+        <div class="lab reveal">
+          <img src="assets/img/olyver-lab.jpg" alt="Estrutura do laboratório Olyver Lab" width="1263" height="823" loading="lazy" decoding="async">
+          <div class="lab-copy">
+            <p class="eyebrow">Olyver Lab</p>
+            <h3>Estrutura de alto padrão.</h3>
+            <p>Equipamentos profissionais, ambiente técnico organizado e especialistas preparados para diagnóstico, reparo e suporte com precisão.</p>
+            <a class="btn btn-ghost" id="lab-cta" href="#contato">Falar com o laboratório</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== AVALIAÇÕES ===================== -->
+    <section class="section" aria-labelledby="aval-titulo">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 id="aval-titulo">Quem compra, indica.</h2>
+        </div>
+        <ul class="reviews">
+          <li class="review reveal"><span class="stars" aria-label="5 de 5 estrelas">★★★★★</span><p>“Fui muito bem atendido. Explicaram tudo com clareza e saí com total confiança.”</p><small>Avaliação Google</small></li>
+          <li class="review reveal"><span class="stars" aria-label="5 de 5 estrelas">★★★★★</span><p>“Recomendo demais. Loja diferenciada, atendimento rápido e produtos de qualidade.”</p><small>Avaliação Google</small></li>
+          <li class="review reveal"><span class="stars" aria-label="5 de 5 estrelas">★★★★★</span><p>“É a 01 da região. Sempre que penso em Apple, só compro com eles.”</p><small>Avaliação Google</small></li>
+          <li class="review reveal"><span class="stars" aria-label="5 de 5 estrelas">★★★★★</span><p>“Pós-venda excelente. A loja acompanha o cliente mesmo depois da compra.”</p><small>Avaliação Google</small></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATO ===================== -->
+    <section class="section section-mist" id="contato" aria-labelledby="contato-titulo">
+      <div class="wrap">
+        <div class="section-head section-head-center reveal">
+          <p class="eyebrow eyebrow-dark">Contato</p>
+          <h2 id="contato-titulo">Fale com a gente.</h2>
+          <p class="section-sub">Tire dúvidas, consulte disponibilidade ou agende seu atendimento. Escolha a unidade mais próxima.</p>
+        </div>
+        <div class="contact-grid" id="contact-grid"></div>
+        <p class="contact-social" id="contact-social" hidden></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <img src="assets/img/logo-olyver.png" alt="Olyver Import" width="820" height="343" loading="lazy">
+        <p>A escolha certa.</p>
+      </div>
+      <nav aria-label="Rodapé">
+        <ul class="footer-links">
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="#apple">Apple</a></li>
+          <li><a href="#jbl">JBL</a></li>
+          <li><a href="#xiaomi">Xiaomi</a></li>
+          <li><a href="#perifericos">Periféricos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrap footer-legal">
+      <p>© <span id="ano"></span> Olyver Import. Todos os direitos reservados.</p>
+      <p>Apple, iPhone, iPad, Mac, Apple Watch e AirPods são marcas da Apple Inc. JBL e Xiaomi são marcas de seus respectivos proprietários. A Olyver Import é uma revenda independente.</p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante (mobile) -->
+  <button class="fab" type="button" data-contato aria-label="Falar conosco pelo WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path d="M8.8 8.6c.2-.5.5-.5.8-.5h.5c.2 0 .4 0 .5.4l.7 1.6c.1.2 0 .4-.1.6l-.5.6c-.1.1-.2.3 0 .5.4.7 1 1.4 1.6 1.9.6.5 1.2.8 1.6 1 .2.1.4 0 .5-.1l.6-.8c.2-.2.4-.2.6-.1l1.6.8c.2.1.4.2.4.4 0 .3 0 1-.5 1.5-.4.4-1.2.8-1.9.7-.8-.1-2.4-.6-3.9-1.9-1.6-1.4-2.5-3.1-2.7-3.9-.2-.8.1-1.5.3-1.8Z"/></svg>
+  </button>
+
+  <!-- Modal: detalhes do produto -->
+  <dialog class="modal product-modal" id="modal-produto" aria-labelledby="pm-nome">
+    <div class="modal-inner" id="pm-conteudo"></div>
+  </dialog>
+
+  <!-- Modal: escolha da unidade -->
+  <dialog class="modal sheet" id="modal-contato" aria-labelledby="mc-titulo">
+    <div class="sheet-inner">
+      <button class="icon-btn icon-btn-light modal-close" type="button" data-fechar aria-label="Fechar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <h2 id="mc-titulo">Escolha a unidade</h2>
+      <p class="sheet-sub" id="mc-sub">Você será direcionado ao WhatsApp.</p>
+      <div class="sheet-options" id="mc-opcoes"></div>
+    </div>
+  </dialog>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/produtos.js" defer></script>
+  <script src="js/icones.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

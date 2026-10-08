@@ -1,0 +1,27 @@
+# Cabeçalhos de segurança — formato Cloudflare Pages / Netlify (lido automaticamente).
+# Outras hospedagens: ver SECURITY.md (Nginx, Apache, Vercel).
+/*
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: accelerometer=(), browsing-topics=(), camera=(), display-capture=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
+  X-Frame-Options: DENY
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
+
+# HTML, CSS e JS sem hash no nome: o navegador revalida a cada visita (ETag),
+# então uma nova publicação aparece na hora, sem misturar versões.
+/
+  Cache-Control: no-cache
+/*.html
+  Cache-Control: no-cache
+/css/*
+  Cache-Control: no-cache
+/js/*
+  Cache-Control: no-cache
+
+# Imagens e fontes: cache de 7 dias. Ao trocar uma foto, prefira um nome novo
+# (ex.: 1.webp → 1-v2.webp) para que todos vejam a versão nova imediatamente.
+/assets/*
+  Cache-Control: public, max-age=604800

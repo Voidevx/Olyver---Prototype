@@ -1,0 +1,70 @@
+{
+  "width": 820,
+  "height": 343,
+  "layers": [
+    {
+      "file": "layers/p00.png",
+      "minX": 0,
+      "maxX": 112,
+      "minY": 0,
+      "maxY": 222,
+      "area": 17394
+    },
+    {
+      "file": "layers/p01.png",
+      "minX": 137,
+      "maxX": 235,
+      "minY": 3,
+      "maxY": 219,
+      "area": 10254
+    },
+    {
+      "file": "layers/p02.png",
+      "minX": 212,
+      "maxX": 338,
+      "minY": 3,
+      "maxY": 219,
+      "area": 12007
+    },
+    {
+      "file": "layers/p03.png",
+      "minX": 345,
+      "maxX": 466,
+      "minY": 3,
+      "maxY": 219,
+      "area": 13319
+    },
+    {
+      "file": "layers/p04.png",
+      "minX": 362,
+      "maxX": 471,
+      "minY": 180,
+      "maxY": 341,
+      "area": 4811
+    },
+    {
+      "file": "layers/p05.png",
+      "minX": 446,
+      "maxX": 819,
+      "minY": 152,
+      "maxY": 342,
+      "area": 14336
+    },
+    {
+      "file": "layers/p06.png",
+      "minX": 483,
+      "maxX": 584,
+      "minY": 3,
+      "maxY": 219,
+      "area": 13924
+    },
+    {
+      "file": "layers/p07.png",
+      "minX": 605,
+      "maxX": 715,
+      "minY": 3,
+      "maxY": 219,
+      "area": 16937
+    }
+  ]
+}
